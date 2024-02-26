@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laba 1</title>
+    <link rel="stylesheet" href="laba1.css">
+</head>
+
+<body>
+    <h2>Заполните форму:</h2>
+
+    <div class="LastName">
+        <label>Фамилия</label>
+        <input type="text" name="lastname">
+        <h3 name="LastNameError"></h3>
+    </div>
+
+    <div class="Name">
+        <label>Имя</label>
+        <input type="text" name="name">
+        <h3 name="NameError"></h3>
+    </div>
+
+    <div class="Email">
+        <label>E-mail</label>
+        <input type="text" name="email">
+        <h3 name="EmailError"></h3>
+    </div>
+
+    <div class="Phon">
+        <label>Телефон <small>(0xx)xxx-xx-xx</small></label>
+        <input type="text" name="phone">
+        <h3 name="PhonError"></h3>
+    </div>
+
+    <div class="Town">
+        <label>Город</label>
+        <select>
+            <option>Минск</option>
+            <option>Витибск</option>
+            <option>Брест</option>
+        </select>
+    </div>
+
+    <div class="IStudy">
+        <label>Я учусь в БГТУ</label>
+        <input type="checkbox" checked="true" name="need" id="">
+    </div>
+
+    <div class="Years">
+        <label>На каком курса Вы учитесь</label>
+        <input type="radio" name="r" id=1>
+        <label>1</label>
+        <input type="radio" name="r" id=2>
+        <label>2</label>
+        <input type="radio" name="r" id=3 checked="true">
+        <label>3</label>
+        <input type="radio" name="r" id=4>
+        <label>4</label>
+    </div>
+
+    <div class="AboutMe">
+        <label>Раскажите о себе</label>
+        <input type="text" name="inform">
+        <h3 name="AboutMeError"></h3>
+    </div>
+
+    <button type="submit" class="Check">Проверить</button>
+    <h1 name="answer">Error</h1>
+    <script src="laba1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+div {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-left: 30px;
+}
+
+button {
+    height: 25px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+#err {
+    margin-left: 30px;
+    font-size: 30px;
+    color: red;
+}
+
+#res {
+    font-size: 30px;
+    padding-left: 25px;
+    border: solid 2px black;
+    background-color: gainsboro;
+    width: 180px;
+}
+
+#resid {
+    margin-left: 40px;
+    color: orange;
+}
+
+.busket {
+    cursor: pointer;
+    height: 0;
+    transition: 1s ease;
+    z-index: 5;
+}
+.imgBox {
+    position: relative;
+    display: flex;
+}
+
+.round {
+    height: 0;
+    position: absolute;
+}

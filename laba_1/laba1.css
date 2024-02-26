@@ -1,0 +1,84 @@
+body{
+background-color: #ffeaea;    
+}
+
+.LastName,
+.Name,
+.Email,
+.Phon,
+.Town,
+.IStudy,
+.Years,
+.AboutMe {
+    height: 55px;
+}
+
+label{
+    margin-bottom: 0;
+}
+
+.AboutMe {
+    padding-bottom: 120px;
+}
+
+input,
+select{
+    border: 0;
+    border-radius: 4px;
+}
+
+.LastName input,
+.Name input,
+.Email input,
+.Phon input,
+.Town select,
+.AboutMe input,
+.IStudy input,
+.Years input {
+    background-color: rgb(231, 222, 222);
+    margin-bottom: 0;
+}
+
+.LastName input {
+    margin-left: 150px;
+}
+
+.Name input {
+    margin-left: 183px;
+}
+
+.Email input {
+    margin-left: 168px;
+}
+
+.Phon input {
+    margin-left: 65px;
+}
+
+.Town select {
+    margin-left: 172px;
+    padding-right: 103px;
+}
+
+.IStudy input {
+    margin-left: 105px;
+}
+
+.Years input:nth-child(2) {
+    margin-left: 26px;
+}
+
+.AboutMe input {
+    margin-left: 95px;
+    padding-bottom: 100px;
+    padding-right: 150px;
+}
+
+h3{
+    margin-top: 0;
+    color: red;
+}
+
+h1{
+    color: red;
+}
