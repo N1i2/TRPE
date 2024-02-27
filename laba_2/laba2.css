@@ -27,8 +27,11 @@ button {
 }
 
 #resid {
-    margin-left: 40px;
-    color: orange;
+    margin-left: 20px;
+    color: red;
+}
+#residGood{
+    color: green;
 }
 
 .busket {

@@ -2,15 +2,18 @@ const button = document.querySelector('.setting');
 const allBusket = document.querySelectorAll('.busket');
 const ball = document.getElementById('ball');
 const balle = document.getElementById('resid');
+const balleGood = document.getElementById('residGood');
 let nowRow;
 let nowHeight;
 let nowWidth;
+let good;
 
 button.addEventListener('click', function () {
     let uHight = document.getElementById("hight");
     let uWidth = document.getElementById("width");
     let rRadius = document.getElementById("radius");
     let yResult = document.getElementsByName("result");
+    good = 0;
     let check = /^[1-9]{1}\d*$/;
 
     if (!(check.test(uHight.value) && check.test(uWidth.value) && check.test(rRadius.value))) {
@@ -38,7 +41,8 @@ button.addEventListener('click', function () {
     nowHeight = hig;
     nowWidth = wid;
 
-    balle.innerText = 5;
+    balle.innerText = 9;
+    balleGood.innerText = 0;
 });
 
 function err() {
@@ -51,7 +55,7 @@ function err() {
 
 allBusket.forEach((busk, index) => {
     busk.addEventListener('click', () => {
-         let bollNumber = Math.floor(Math.random() * 3);
+        let bollNumber = Math.floor(Math.random() * 3);
         //let bollNumber =0;
 
         let g = parseInt(balle.innerText);
@@ -63,16 +67,16 @@ allBusket.forEach((busk, index) => {
             setTimeout(() => {
                 ball.style.height = 0;
             }, 2000);
-
-             g++;
+                good++;
         }
         else {
              g--;
         }
 
         balle.innerText = g;
+        balleGood.innerText = good;
 
-        if (g == 0 || g == 10) {
+        if (g == 0 || good == 3) {
             const h = document.getElementsByClassName('busket');
 
             for (let i = 0; i < h.length; i++) {
@@ -80,8 +84,8 @@ allBusket.forEach((busk, index) => {
                 h[i].style.height = 0;
             }
 
-            let end = 'you ' + ((g == 0) ? 'lose' : 'win');
-            alert(end);
+            let end = 'you ' + ((good != 3) ? 'lose' : 'win');
+            setTimeout(()=>{alert(end);},1000)
         }
 
         allBusket[index].style.transform = 'translateY(-' + nowHeight + 'px)';
