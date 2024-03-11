@@ -129,8 +129,18 @@ function GetProdView(product: Product[]) {
     }
 }
 
-GetProducts();
-GetProdView(products.boots.boot);
+let iterstor = () => {
+    let gg: Product[] = [];
+
+
+};
+
+for (let i in iterstor) {
+    console.log(i);
+}
+
+// GetProducts();
+// GetProdView(products.boots.boot);
 
 function FilterProduct(whereFiltr: number, viewFiltr: number, value: number):void {
     let result: Product[];

@@ -101,8 +101,12 @@ function GetProdView(product) {
         console.log('resulte price = ' + product[i].ResultPriceGet);
     }
 }
-GetProducts();
-GetProdView(products.boots.boot);
+let iterstor = GetProdView;
+for (let i in iterstor) {
+    console.log(i);
+}
+// GetProducts();
+// GetProdView(products.boots.boot);
 function FilterProduct(whereFiltr, viewFiltr, value) {
     let result;
     if (whereFiltr == 1) {
