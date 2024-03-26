@@ -39,5 +39,6 @@ var Clock = /** @class */ (function () {
 }());
 var css = {
     border: '1px solid black',
-    margin: '50px, 150px'
+    margin: '50px, 150px',
+    //    age:56
 };

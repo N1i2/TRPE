@@ -43,7 +43,6 @@ var Animal = /** @class */ (function () {
     function Animal() {
         this.voice = '';
         this.color = 'Black';
-        //this.Go();
     }
     Animal.prototype.Go = function () {
         console.log('Gogogo');
