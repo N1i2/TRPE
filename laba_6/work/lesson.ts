@@ -12,35 +12,38 @@ const array:obj[] = [
     {id: 4, name: 'Petya', group: 10},
     {id: 5, name: 'Kira', group: 11},
 ]
+
 /////////////////////////// 2 /////////////////////////////
 type CarsType = {
     manufacturer?:string;
     model?:string;
 }
 
-let car: CarsType = {}; //объект создан!
+let car: CarsType = {}; 
 car.manufacturer = "manufacturer";
 car.model = 'model';
+
 /////////////////////////// 3 /////////////////////////////
 type ArrayCarsType = {
     cars:CarsType[]
 }
 
-const car1: CarsType = {}; //объект создан!
+const car1: CarsType = {}; 
 car1.manufacturer = "manufacturer";
 car1.model = 'model';
 
-const car2: CarsType = {}; //объект создан!
+const car2: CarsType = {};
 car2.manufacturer = "manufacturer";
 car2.model = 'model';
 
 const arrayCars: Array<ArrayCarsType> = [{
     cars: [car1, car2]
 }];
+
 /////////////////////////// 4 /////////////////////////////
 type MarkFilterType = 1|2|3|4|5|6|7|8|9|10;
-type DoneType = string;
 type GroupFilterType = MarkFilterType|11|12
+type DoneType = string;
 
 type MarkType = {
     subject: string,
@@ -53,7 +56,6 @@ type StudentType = {
     group: GroupFilterType, 
     marks: Array<MarkType>,
 }
-
 type GroupType = {
     students:StudentType[]
     studentsFilter: (group: number) => Array<StudentType>, 

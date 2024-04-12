@@ -1,0 +1,15 @@
+.Counter{
+    text-align: center;
+    color: #0ff;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.Button{
+    width: 150px;
+    height: 60px;
+    margin: 30px;
+    margin-top: 80px;
+    font-size: 40px;
+    border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+.App {
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 2px #0ff;
+  border-radius: 20px;
+  margin-left: 370px;
+  margin-top: 50px;
+}
+
+body{
+  background-color: #333
+}
