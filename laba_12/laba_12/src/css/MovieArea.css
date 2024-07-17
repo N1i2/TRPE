@@ -1,0 +1,46 @@
+.area{
+    height: 390px;
+    width: 300px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.myImage{
+    height: 280px;
+    width: 280px;
+    margin-top: 7px;
+    margin-left: 7.5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.elemYear{
+    display: flex;
+    justify-content: space-between;
+}
+
+.typeName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 150, 180);
+    border-radius: 10px;
+}
+
+h1{
+color: #055;
+}
+
+.type{
+    color: blue;
+    margin-right: 30px;
+}

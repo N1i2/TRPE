@@ -1,0 +1,21 @@
+.Counter{
+    text-align: center;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+Button{
+    width: 150px;
+    height: 60px;
+    margin: 30px;
+    margin-top: 80px;
+    font-size: 40px;
+    background-color: #0ff;
+    border-radius: 5px;
+}
+
+.MySqer{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}

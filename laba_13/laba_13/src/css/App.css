@@ -1,0 +1,25 @@
+header {
+    height: 50px;
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    border-radius: 10px;
+    background-color: #666;
+}
+
+.link {
+    text-decoration: none;
+    color: #aaa;
+    margin: 100px;
+    font-size: 24px;
+}
+
+.link.active {
+    color: #0aa;
+}
